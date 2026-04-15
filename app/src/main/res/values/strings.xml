@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hub</string>
+    <string name="calculator">Calculator</string>
+    <string name="bascore">Bascore</string>
+    <string name="reset_game">Reset Game</string>
+    <string name="plus_two_throw">+2 Points</string>
+    <string name="plus_three_throw">+3 Points</string>
+    <string name="back">Back</string>
+    <string name="free_throw">Free Throw</string>
+    <string name="life_counter">LifeCounter</string>
+
+    <string name="sin">sin</string>
+</resources>

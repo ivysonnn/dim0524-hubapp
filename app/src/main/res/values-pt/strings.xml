@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hub</string>
+    <string name="calculator">Calculadora</string>
+    <string name="bascore">Bascore</string>
+    <string name="plus_two_throw">+2 Pontos</string>
+    <string name="plus_three_throw">+3 Pontos</string>
+    <string name="reset_game">Reiniciar Partida</string>
+    <string name="free_throw">Tiro Livre</string>
+    <string name="life_counter">ContaVida</string>]
+    <string name="back">Voltar</string>
+
+    <string name="sin">sen</string>
+</resources>

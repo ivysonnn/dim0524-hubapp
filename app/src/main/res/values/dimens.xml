@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_transform_image_length">100dp</dimen>
+
+    <!-- Life Counter -->
+    <dimen name="life_text_size">80sp</dimen>
+    <dimen name="life_control_button_text_size">34sp</dimen>
+    <dimen name="life_control_button_height">100dp</dimen>
+    <dimen name="life_color_button_size">48dp</dimen>
+    <dimen name="life_color_button_text_size">20sp</dimen>
+</resources>

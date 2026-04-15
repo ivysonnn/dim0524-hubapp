@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".lifecounter.LifeCounterActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_p1"
+        style="?attr/materialCardViewOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:strokeColor="@color/blue_lf"
+        app:strokeWidth="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/container_p1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:rotation="180">
+
+            <Button
+                android:id="@+id/btn_p1_color"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="@dimen/life_color_button_size"
+                android:layout_height="@dimen/life_color_button_size"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="C"
+                android:textColor="@color/blue_lf"
+                android:textSize="@dimen/life_color_button_text_size"
+                android:textStyle="bold"
+                android:contentDescription="Trocar Cor P1" />
+
+            <Button
+                android:id="@+id/btn_p1_plus"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/life_control_button_height"
+                android:text="+"
+                android:textColor="@color/blue_lf"
+                android:textSize="@dimen/life_control_button_text_size" />
+
+            <TextView
+                android:id="@+id/tv_p1_life"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@color/blue_lf"
+                android:textSize="@dimen/life_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_p1_minus"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/life_control_button_height"
+                android:text="-"
+                android:textColor="@color/blue_lf"
+                android:textSize="@dimen/life_control_button_text_size" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Divisor Central -->
+    <LinearLayout
+        android:id="@+id/divider"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggle_life_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleSelection="true"
+            app:selectionRequired="true"
+            app:checkedButton="@+id/btn_life_20">
+
+            <Button
+                android:id="@+id/btn_life_20"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20" />
+
+            <Button
+                android:id="@+id/btn_life_30"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30" />
+
+            <Button
+                android:id="@+id/btn_life_40"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="40" />
+
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_p2"
+        style="?attr/materialCardViewOutlinedStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:strokeColor="@color/red_lf"
+        app:strokeWidth="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider">
+
+        <LinearLayout
+            android:id="@+id/container_p2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_p2_color"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="@dimen/life_color_button_size"
+                android:layout_height="@dimen/life_color_button_size"
+                android:layout_gravity="end"
+                android:layout_margin="8dp"
+                android:text="C"
+                android:textColor="@color/red_lf"
+                android:textSize="@dimen/life_color_button_text_size"
+                android:textStyle="bold"
+                android:contentDescription="Trocar Cor P2" />
+
+            <Button
+                android:id="@+id/btn_p2_plus"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/life_control_button_height"
+                android:text="+"
+                android:textColor="@color/red_lf"
+                android:textSize="@dimen/life_control_button_text_size" />
+
+            <TextView
+                android:id="@+id/tv_p2_life"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20"
+                android:textColor="@color/red_lf"
+                android:textSize="@dimen/life_text_size"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_p2_minus"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/life_control_button_height"
+                android:text="-"
+                android:textColor="@color/red_lf"
+                android:textSize="@dimen/life_control_button_text_size" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

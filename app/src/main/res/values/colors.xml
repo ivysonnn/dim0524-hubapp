@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue_primary">#6596DB</color>
+    <color name="gray_surface">#F5F5F5</color>
+    <color name="equal">#404FDB</color>
+    <color name="operation_color">#6571DB</color>
+    <color name="toggle_color">#000000</color>
+
+    <color name="text_display">#000000</color>
+    <color name="text_button">#FFFFFF</color>
+    <color name="text_operation">#757575</color>
+
+    <color name="hub_card_bg">#FFFFFF</color>
+    <color name="hub_bascore">#E53935</color>
+    <color name="hub_calculator">#1E88E5</color>
+    <color name="hub_lifecounter">#43A047</color>
+    <color name="return_b">#FFFFFF</color>
+
+    <color name="team_a_color">#c12929</color>
+    <color name="team_b_color">#5496db</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="dark_lf">#4C4847</color>
+    <color name="green_lf">#6F974E</color>
+    <color name="blue_lf">#4A91AE</color>
+    <color name="red_lf">#CB2D17</color>
+    <color name="white_lf">#F2E0A8</color>
+</resources>
